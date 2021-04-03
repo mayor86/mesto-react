@@ -7,7 +7,7 @@
   box-sizing: border-box;
   background: #000000;
   border: none;
-  background-image: url(../../../images/profile-edit_button.svg);
+  background-image: url(../../../../src/images/profile-edit_button.svg);
 }
 
 .profile__edit-button:hover {
@@ -19,6 +19,6 @@
   .profile__edit-button {
     width: 18px;
     height: 18px;
-    background-image: url(../../../images/profile-edit_button_mobile.svg);
+    background-image: url(../../../../src/images/profile-edit_button_mobile.svg);
   }
 }

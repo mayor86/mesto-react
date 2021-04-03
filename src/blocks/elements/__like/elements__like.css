@@ -2,7 +2,7 @@
   width: 21px;
   height: 19px;
   background: #FFFFFF;
-  background-image: url(../../../images/like.svg);
+  background-image: url(../../../../src/images/like.svg);
   transition: opacity .5s linear;
   border: none;
   outline: none;
