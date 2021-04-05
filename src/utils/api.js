@@ -11,10 +11,7 @@ class Api {
           authorization: this._token
         }
       })
-      .then(this._checkResponse)
-      .catch((err) => {
-        console.log('Ошибка. Запрос Api.getInitialCards() не выполнен. Текст ошибки: ' + err);
-      });
+      .then(this._checkResponse);
   }
 
   getUserInfo() {
@@ -24,10 +21,7 @@ class Api {
           authorization: this._token
         }
       })
-      .then(this._checkResponse)
-      .catch((err) => {
-        console.log('Ошибка. Запрос Api.getUserInfo() не выполнен. Текст ошибки: ' + err);
-      });
+      .then(this._checkResponse);
   }
 
   sendUserInfo(name, about) {
@@ -42,10 +36,7 @@ class Api {
           about: about
         })
       })
-      .then(this._checkResponse)
-      .catch((err) => {
-        console.log('Ошибка. Запрос Api.saveUserInfo() не выполнен. Текст ошибки: ' + err);
-      });
+      .then(this._checkResponse);
   }
 
   changeAvatar(avatar) {
@@ -59,10 +50,7 @@ class Api {
           avatar: avatar
         })
       })
-      .then(this._checkResponse)
-      .catch((err) => {
-        console.log('Ошибка. Запрос Api.changeAvatar() не выполнен. Текст ошибки: ' + err);
-      });
+      .then(this._checkResponse);
   }
 
   sendNewCard(name, link) {
@@ -77,10 +65,7 @@ class Api {
           link: link,
         })
       })
-      .then(this._checkResponse)
-      .catch((err) => {
-        console.log('Ошибка. Запрос Api.sendNewCard() не выполнен. Текст ошибки: ' + err);
-      });
+      .then(this._checkResponse);
   }
 
   deleteCard(cardId) {
@@ -90,10 +75,7 @@ class Api {
           authorization: this._token,
         }
       })
-      .then(this._checkResponse)
-      .catch((err) => {
-        console.log('Ошибка. Запрос Api.deleteCard() не выполнен. Текст ошибки: ' + err);
-      });
+      .then(this._checkResponse);
   }
 
   setCardLike(cardId) {
@@ -103,10 +85,7 @@ class Api {
           authorization: this._token,
         }
       })
-      .then(this._checkResponse)
-      .catch((err) => {
-        console.log('Ошибка. Запрос Api.setCardLike() не выполнен. Текст ошибки: ' + err);
-      });
+      .then(this._checkResponse);
   }
 
   setCardDislike(cardId) {
@@ -116,10 +95,7 @@ class Api {
           authorization: this._token,
         }
       })
-      .then(this._checkResponse)
-      .catch((err) => {
-        console.log('Ошибка. Запрос Api.setCardDislike() не выполнен. Текст ошибки: ' + err);
-      });
+      .then(this._checkResponse);
   }
 
   _checkResponse(res) {

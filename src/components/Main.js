@@ -14,7 +14,7 @@ function Main(props) {
           <img
             alt="Аватар"
             className="profile__avatar"
-            style={{ backgroundImage: `url(${currentUser.avatar})` }}
+            src={currentUser.avatar}
           />
           <button
             className="profile__avatar-edit-button"

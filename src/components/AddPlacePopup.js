@@ -5,13 +5,15 @@ function AddPlacePopup(props) {
   const placeNameRef = React.useRef();
   const placeLinkRef = React.useRef();
 
+  React.useEffect(() => {
+    placeNameRef.current.value = "";
+    placeLinkRef.current.value = "";
+  }, [props.isOpen]);
+
   function handleSubmit(e) {
     e.preventDefault();
 
     props.onAddPlace(placeNameRef.current.value, placeLinkRef.current.value);
-
-    placeNameRef.current.value = "";
-    placeLinkRef.current.value = "";
   }
 
   return (

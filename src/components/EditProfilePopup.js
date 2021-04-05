@@ -46,7 +46,7 @@ function EditProfilePopup(props) {
         maxLength="40"
         placeholder="Имя"
         required
-        defaultValue={name}
+        value={name}
         onChange={onInputNameChange}
       />
       <span className="profile-name-input-error popup__input-el-error">
@@ -61,7 +61,7 @@ function EditProfilePopup(props) {
         maxLength="200"
         placeholder="О себе"
         required
-        defaultValue={description}
+        value={description}
         onChange={onInputDescriptionChange}
       />
       <span className="profile-job-input-error popup__input-el-error">
